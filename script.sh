@@ -37,11 +37,10 @@ echo "
 
 echo "${BOLD}Be patient, we will do some command in order to fix your problem${NONE}\n\n"
 sleep 2
-ping -c 4 leroymerlin.fr
 apt update
 apt-get install toilet -y
 
-for i in 1 2 3 4 5 6 7 8 9 10; do echo "${YELLOW}We're investigated${NONE}" & echo "$(date '+%D %T' | toilet -f term -F border --gay)" & cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 1024 | head -n 1; sleep 1; done;
+for i in 1 2 3 4 5 6 7 8 9 10; do echo "${YELLOW}We're investigating${NONE}" & echo "$(date '+%D %T' | toilet -f term -F border --gay)" & cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 1024 | head -n 1; sleep 1; done;
 
 echo "\n\n\n"	
 
